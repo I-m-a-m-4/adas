@@ -55,7 +55,7 @@ const EventMarketing = () => {
   }
 
   // Create a shareable link using your live website's domain
-  const shareableLink = `https://adas-event.web.app/events/${eventId}`;
+  const shareableLink = `https://adas-event.web.app/event-page/${eventId}`;
 
   return (
     <div className="relative flex min-h-screen bg-black text-white">

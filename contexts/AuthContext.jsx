@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 
             {/* Animated Text with Shimmer Effect */}
             <div className="text-center">
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent animate-shimmer">
+              <h1 className="text-4xl font-bold bg-gradient-to-r from-[#9E0DAD] to-[#6A0DAD] bg-clip-text text-transparent animate-shimmer">
                 ADAS
               </h1>
               <p className="text-sm font-medium text-gray-600">

@@ -163,7 +163,7 @@ const Login = () => {
 
       {/* Main Login Form */}
       <div className="w-[90%] max-w-[500px] p-8 bg-white rounded-lg border shadow-lg">
-        <h2 className="text-3xl font-bold text-black text-center mb-6">
+        <h2 className="text-3xl font-bold text-[#444141] text-center mb-6">
           Welcome Back
         </h2>
         <p className="text-gray-400 text-center mb-6"> <span className="bg-gradient-to-r from-[#6A0DAD] via-[#6E3995] to-[#9E0DAD]
@@ -198,7 +198,7 @@ const Login = () => {
             placeholder="Enter your email..."
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 pl-10 rounded-lg bg-white text-white border border-[#9E0DAD] focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 pl-10 rounded-lg bg-white text-gray-800 border border-[#9E0DAD] focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="relative mb-4">
@@ -208,7 +208,7 @@ const Login = () => {
             placeholder="Enter your password..."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-3 pl-10 rounded-lg bg-white text-white border  border-[#9E0DAD] focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 pl-10 rounded-lg bg-white text-gray-800 border  border-[#9E0DAD] focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
 

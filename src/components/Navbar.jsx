@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link to="/profile">
           <div
             className="w-8 h-8 flex items-center my-3 justify-center rounded-full"
-            style={{ backgroundColor: "#5ce1e6", color: "white" }}
+            style={{ backgroundColor: "#9E0DAD", color: "white" }}
           >
             {getInitials()}
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full flex py-6 items-center navbar border-b border-gray-200 relative"
+      className="w-full flex py-6 items-center navbar border-b border-gray-800 relative"
       style={{ borderBottom: "1px solid #ffffff20", zIndex: 100 }}
     >
       <div className="flex items-center flex-1">
@@ -85,7 +85,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className="relative font-normal cursor-pointer font-[500] text-[16px] text-black"
+              className="relative font-normal  cursor-pointer font-[500] text-[16px] text-black"
               onClick={() => {
                 setActive(nav.title);
                 if (nav.id === "features") {
@@ -120,7 +120,7 @@ const Navbar = () => {
         </div>
       </ul>
 
-      <ul className="list-none hidden sm:flex flex-1 justify-end items-center gap-6">
+      <ul className="list-none hidden sm:flex flex-1 justify-end items-center gap-24">
         {authLinks}
       </ul>
 
@@ -136,7 +136,7 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt="menu"
             /* If your icons are white lines, use "invert" to make them black */
-            className="w-[28px] h-[28px] object-contain invert"
+            className="w-[28px] h-[28px] text-gray-700 object-contain invert"
           />
         </div>
 
@@ -144,13 +144,13 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } fixed inset-0 p-6 bg-white flex flex-col items-center justify-center z-50`}
+          } fixed inset-0 p-6 bg-white flex flex-col items-start justify-start z-50`}
         >
           <ul className="list-none flex flex-col items-center">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className="relative font-medium cursor-pointer text-[16px] text-black mb-4"
+                className="relative font-medium cursor-pointer text-[16px] text-gray-700 mb-4"
                 onClick={() => {
                   setActive(nav.title);
                   if (nav.id === "features") {

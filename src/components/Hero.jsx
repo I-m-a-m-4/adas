@@ -3,6 +3,7 @@ import styles from "../style";
 import Robot from "../assets/robots.png";
 // Import your orange arc image
 import OrangeArc from "../assets/Line 3.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,11 +14,12 @@ const Hero = () => {
         relative min-h-screen overflow-x-hidden overflow-hidden
    
         ${styles.paddingY}
-      `}>
+      `}
+    >
       {/* Main container (flex for desktop, stacked for mobile) */}
       <div className="mx-auto px-4 flex flex-col md:flex-row items-start text-left h-full">
         {/* Left Content */}
-              
+
         <div className="relative z-10 flex-1 w-full flex flex-col px-6 sm:px-16 py-8">
           {/* Title */}
           <div className="w-full  mb-6 mt-4 ">
@@ -47,7 +49,7 @@ const Hero = () => {
                 <img
                   src={OrangeArc}
                   alt="Orange arc"
-                  className="absolute w-[100px] left-1/2 transform -translate-x-1/2 bottom-[-8px]"
+                  className="absolute w-[200px] left-1/2 mt-6 transform -translate-x-1/2 bottom-[-8px]"
                 />
               </span>
             </h1>
@@ -70,8 +72,9 @@ const Hero = () => {
           </p>
 
           {/* Button */}
+          <Link to="/create-event-form">
           <button
-  className="
+            className="
     w-[15rem] 
     bg-gradient-to-r from-[#6A0DAD] via-[#6E3995] to-[#9E0DAD]
     text-white font-bold
@@ -81,10 +84,11 @@ const Hero = () => {
     transition duration-300
     mt-10
   "
->
-  Host Your Next Event Here
-</button>
-
+          >
+            Host Your Next Event Here
+          </button>
+          </Link>
+         
         </div>
 
         {/* Right Content (Image) */}
