@@ -85,7 +85,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className="relative font-normal  cursor-pointer font-[500] text-[16px] text-black"
+              className="relative font-normal  cursor-pointer  text-[16px] text-black"
               onClick={() => {
                 setActive(nav.title);
                 if (nav.id === "features") {
@@ -142,7 +142,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } fixed top-0 left-0 w-full h-[40%] p-6 bg-white border-b border-gray-300 flex flex-col justify-start z-50`}
+          } fixed top-0 left-0 w-full h-[50%] p-6 bg-white border-b border-gray-300 flex flex-col justify-start z-50`}
         >
           <img src={Adas} alt="menu" className="w-[85px] h-[40px] " />
           {/* Navigation Links */}
